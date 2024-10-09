@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Chat Page";
+}
+<h1>Chat messages</h1>
+
+<div class="container">
+    <div id="messages"></div>
+
+    <hr />
+
+    <div class="input-group mb-3">
+        <input type="text" id="messageInput" class="form-control" placeholder="Send message" />
+
+        <div class="input-group-append">
+            <button type="submit" id="sendButton" class="btn btn-primary">Send</button>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}
